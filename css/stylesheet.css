@@ -1,0 +1,58 @@
+/*2016 Copyright Redouan Ahad-Dad*/
+
+
+/*contact@redouanahdd.me*/
+
+body {
+  font-family: 'Raleway', serif;
+  background: url(../img/bg.jpg);
+  padding: 1em;
+}
+
+/*-----Head-----*/
+
+#head {
+  background: url("../img/banner.jpg");
+}
+#headtitle {
+  color: white;
+  text-shadow: .2em .0em 0.2em black;
+}
+
+/*-----Navbar-----*/
+
+#nav {
+margin-top: 0.5em;
+  background-color: rgba(239, 251, 251, 0.8);
+}
+#odisee {
+  height: 2em;
+  width: 6em;
+}
+ul.nav a {
+  color: black !important;
+}
+ul.nav a:hover {
+  color: grey !important;
+}
+/*Main panel*/
+.panel
+{
+  margin: 1em;
+
+}
+#profile
+{
+  border-radius: 100%;
+  width: 10em;
+  height: 10em;
+}
+#panel-titel-home{
+  font-size: 1.5em;
+  font-weight:bold;
+}
+.panel-heading
+{
+  padding:0.5em;
+
+}
