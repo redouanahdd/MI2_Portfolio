@@ -41,12 +41,37 @@
         <p id="panel-titel-home">Welkom</p>
       </div>
       <div class="panel-body">
-        <div class="row">
-          <div class="col-sm-3" id="panelcolleft"><img src="img/profile.jpg" alt="profile" id="profile"></div>
-          <div class="col-sm-7">
-            <p>Welkom op mijn portfolio ! Ik ben <b>Redouan Ahad-Dad</b>, een student toegepaste informatica aan Odisee hogeschool Brussel. Op deze website vindt U alle lessenoefeningen voor het vak Mobiel en Internet 2 gegeven door docent Steven Ophalvens.
-              Om de oefeningen te bekijken klik op de rubriek Lessen in de navigatiebar.</p>
-          </div>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="Les1.html">Les 1</a></li>
+          <li><a href="Les2.html">Les 2</a></li>
+          <li><a href="Les3.html">Les 3</a></li>
+          <li><a href="Les4.html">Les 4</a></li>
+          <li><a href="Les5.html">Les 5</a></li>
+          <li><a href="Les6.html">Les 6</a></li>
+          <li><a href="Les7.html">Les 7</a></li>
+          <li><a href="Les8.html">Les 8</a></li>
+        </ul>
+        <p id="maincontainer">
+          <script> var getal1 = Math.round(Math.random(20) * 100);
+          var getal2 = Math.round(Math.random(15) * 100);
+          function Optellen(getal1, getal2) {
+          return getal1 + getal2;
+          }
+          function Aftrekken(getal1, getal2) {
+          return getal1 - getal2;
+          }
+          function Delen(getal1, getal2) {
+          return getal1 / getal2;
+          }
+          function Vermenigvuldiging(getal1, getal2) {
+          return getal1 * getal2;
+          }
+          document.write(getal1 + " + " + getal2 + " = " + Optellen(getal1, getal2) + '<br>');
+          document.write(getal1 + " - " + getal2 + " = " + Optellen(getal1, getal2) + '<br>');
+          document.write(getal1 + " / " + getal2 + " = " + Delen(getal1, getal2) + '<br>');
+          document.write(getal1 + " * " + getal2 + " = " + Vermenigvuldiging(getal1, getal2))
+          </script>
+        </p>
         </div>
       </div>
     </div>
