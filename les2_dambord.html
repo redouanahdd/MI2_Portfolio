@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio - Les 2</title>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<link href="js/jquery-ui.css" rel="stylesheet">
+		<script src="jquery-1.11.2.js"></script>
+		<script src="js/jquery-ui.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#menu').menu({});
+				$("#accordion").accordion({
+					active : 2
+				});
+			});
+		</script>
+		<style>
+			#Red {
+
+				width: 15px;
+				height: 15px;
+				background-color: red;
+				border-style: solid;
+				border-radius: 15px;
+				margin-left: 15px;
+				margin-top: 20px;
+			}
+			#Red:hover {
+
+				border-width: 2px;
+				border-color: yellow;
+			}
+
+			#Geel {
+
+				width: 15px;
+				height: 15px;
+				background-color: yellow;
+				border-style: solid;
+				border-radius: 15px;
+				margin-left: 15px;
+				margin-top: 20px;
+			}
+
+			#Geel:hover {
+
+				border-width: 2px;
+				border-color: orange;
+			}
+
+			.Bord {
+				margin-left: 125px;
+				margin-right: 120px;
+				margin-top: 50px;
+				height: 425px;
+				width: 450px;
+			}
+			.Even {
+
+				background-color: white;
+				width: 50px;
+				height: 50px;
+				border-color: black;
+				border-style: solid solid;
+				border-width: 1px;
+				position: relative;
+				float: left
+			}
+
+			.Even:hover {
+
+				background-color: #d3d3d3;
+			}
+
+			.Oneven {
+
+				background-color: black;
+				width: 50px;
+				height: 50px;
+				border-style: solid solid;
+				border-width: 1px;
+				position: relative;
+				float: left
+			}
+			.Oneven:hover {
+				background-color: #d3d3d3
+			}
+			h1 {
+
+				text-align: center;
+				color: black;
+				line-height: 20pt;
+			}
+			p {
+				background: yellow;
+				color: red;
+				border: black;
+				border-width: 3px;
+				border-radius: 5px;
+				box-shadow: 2px 2px 3px black;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>Les 2 - Schaakbord</h1>
+			</header>
+			<div onmousemove="myFunction(event)" onmouseout="clearCoor()" >
+				<div class="Bord">
+					<script>
+						var odd2 = new Array('<div class="Oneven"></div>');
+						var pair = new Array('<div class="Even"></div>');
+						var odd = new Array('<div class="Oneven"><div id="Geel"></div></div>');
+						var odd3 = new Array('<div class="Oneven"><div id="Red"></div></div>');
+
+						for (var i = 0; i < 1; i++) {
+
+							document.write(pair[i] + odd[i] + pair[i] + odd[i] + pair[i] + odd[i] + pair[i] + odd[i] + "\n");
+							document.write(odd[i] + pair[i] + odd[i] + pair[i] + odd[i] + pair[i] + odd[i] + pair[i] + "\n");
+							document.write(pair[i] + odd[i] + pair[i] + odd[i] + pair[i] + odd[i] + pair[i] + odd[i] + "\n");
+							document.write(odd2[i] + pair[i] + odd2[i] + pair[i] + odd2[i] + pair[i] + odd2[i] + pair[i] + "\n");
+							document.write(pair[i] + odd2[i] + pair[i] + odd2[i] + pair[i] + odd2[i] + pair[i] + odd2[i] + "\n");
+							document.write(odd3[i] + pair[i] + odd3[i] + pair[i] + odd3[i] + pair[i] + odd3[i] + pair[i] + "\n");
+							document.write(pair[i] + odd3[i] + pair[i] + odd3[i] + pair[i] + odd3[i] + pair[i] + odd3[i] + "\n");
+							document.write(odd3[i] + pair[i] + odd3[i] + pair[i] + odd3[i] + pair[i] + odd3[i] + pair[i] + "\n");
+
+						}
+
+					</script>
+				</div>
+			</div>
+			<footer>
+
+			</footer>
+		</div>
+	</body>
+</html>

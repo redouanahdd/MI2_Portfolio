@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
-
 </head>
 
 <body>
@@ -28,7 +27,7 @@
         </a>
       </div>
       <ul class="nav navbar-nav" id="navitems">
-        <li class=><a href="index.html"><i class="icon ion-home"></i> Home</a></li>
+        <li ><a href="index.html"><i class="icon ion-home"></i> Home</a></li>
         <li class="active"><a href="lessen.html"><i class="icon ion-university"></i> Lessen</a></li>
         <li><a href="http://onderwijsaanbod.odisee.be/2015/syllabi/n/HBI19BN.htm#activetab=doelstellingen_idp15875392"><i class="icon ion-document"></i> ECTS</a></li>
         <li><a href="#"><i class="icon ion-social-github"></i> GitHub</a></li>
@@ -36,14 +35,14 @@
     </div>
   </nav>
   <!-- Container -->
-    <div class="panel panel-default">
+    <div class="panel panel-default" id="paneldambord">
       <div class="panel-heading">
         <p id="panel-titel-home">Welkom</p>
       </div>
       <div class="panel-body">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="Les1.html">Les 1</a></li>
-          <li><a href="Les2.html">Les 2</a></li>
+          <li><a href="Les1.html">Les 1</a></li>
+          <li  class="active"><a href="Les2.html">Les 2</a></li>
           <li><a href="Les3.html">Les 3</a></li>
           <li><a href="Les4.html">Les 4</a></li>
           <li><a href="Les5.html">Les 5</a></li>
@@ -51,29 +50,8 @@
           <li><a href="Les7.html">Les 7</a></li>
           <li><a href="Les8.html">Les 8</a></li>
         </ul>
-        <p id="maincontainer">
-          <script> var getal1 = Math.round(Math.random(20) * 100);
-          var getal2 = Math.round(Math.random(15) * 100);
-          function Optellen(getal1, getal2) {
-          return getal1 + getal2;
-          }
-          function Aftrekken(getal1, getal2) {
-          return getal1 - getal2;
-          }
-          function Delen(getal1, getal2) {
-          return getal1 / getal2;
-          }
-          function Vermenigvuldiging(getal1, getal2) {
-          return getal1 * getal2;
-          }
-          document.write(getal1 + " + " + getal2 + " = " + Optellen(getal1, getal2) + '<br>');
-          document.write(getal1 + " - " + getal2 + " = " + Optellen(getal1, getal2) + '<br>');
-          document.write(getal1 + " / " + getal2 + " = " + Delen(getal1, getal2) + '<br>');
-          document.write(getal1 + " * " + getal2 + " = " + Vermenigvuldiging(getal1, getal2))
-          </script>
-        </p>
-        </div>
       </div>
+              <iframe src="les2_dambord.html" frameborder="0"></iframe>
     </div>
 <!-- Footer -->
 <footer class="footer">
