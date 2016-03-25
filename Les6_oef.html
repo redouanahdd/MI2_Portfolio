@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Portfolio Redouan - oefening 5.3</title>
+		<meta name="description" content="">
+		<meta name="author" content="583153">
+		<script src="js/jquery.js"></script>
+
+		<style type="text/css">
+			h1 {
+				text-align: center;
+			}
+			img {
+				margin-left: 8em;
+			}
+			a {
+				margin-left: 42%;
+			}
+		</style>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("body").fadeIn("slow");
+				$("img").click(function() {
+					$("img").fadeOut("slow");
+					$("img").replaceWith("<img src=http://img.mobypicture.com/ac9221b42e4852370dde2768686b999e_large.jpg>");
+
+				});
+				$('a').button({
+					icons : {
+						primary : 'ui-icon-home'
+					}
+				})
+			});
+
+		</script>
+
+	</head>
+	<h1> Oef 5.3 - les 6</h1>
+	<body>
+		<a class="ui-button" href="index.html"> Terug naar index </a>
+		<div style=“text-align:center”>
+			<img src=http://img.mobypicture.com/4784e2f8d760413b945c4e135be20278_large.jpg >
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Les 5 - Oefening </title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+</head>
+<style>
+  body {
+    margin: 2em;
+    padding: 2em;
+  }
+
+  h1 {
+    border-width: 2px;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 2px 2px 3px black;
+    background: grey;
+  }
+
+  li {
+    color: red;
+  }
+
+  .stijl {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a {
+    background: grey;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <h1>Les 5 - Oefening</h1>
+
+  <ul>
+    <li>
+      Brussel
+    </li>
+    <li>
+      Antwerpen
+    </li>
+    <li>
+      Leuven
+    </li>
+    <li>
+      Marrakech
+    </li>
+    <li>
+      Deurne
+    </li>
+    <li>
+      Willebroek
+    </li>
+    <li>
+      Sint-Pieters-Leeuw
+    </li>
+    <li>
+      Mechelen
+    </li>
+
+  </ul>
+  <br>
+  <input type="text" id="veld" />
+  <button id="knop">
+    Voeg toe
+  </button>
+  <script src="js/jquery.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      $("li").click(function() {
+        $(this).toggleClass("stijl");
+      });
+
+      $("button").click(add);
+
+      function add() {
+        var value = $("input:text").val();
+        var lastvalue = $("li:last");
+
+        $("li:last").append('<li>' + value + '</li>');
+      }
+
+    });
+  </script>
+
+
+</body>
+
+</html>

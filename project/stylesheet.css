@@ -1,0 +1,43 @@
+@font-face {
+    font-family: USA;
+    src: url(../fonts/AMERD___.TTF);
+}
+body{
+  margin: 1em;
+  background-color: grey;
+}
+h1,h2{
+  text-align: center;
+  font-family: USA;
+}
+.blue{
+  color: blue;
+}
+.white{
+  color: white;
+}
+.red{
+  color: red;
+
+}
+.jumbotron{
+  background-image: url(http://www.stageusa.fr/wp-content/uploads/2015/12/usa-road66.jpg);
+background-size: cover;
+  background-color:grey;
+}
+h2{
+  color: white;
+  text-shadow: black;
+}
+td{
+  width: 10em;
+  height: 10em;
+  background-color: yellow;
+  border-width: 0.5em;
+  border-style:double;
+  border-color: red;
+}
+.panel
+{
+  padding: 5em;
+}

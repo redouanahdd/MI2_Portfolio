@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - MI2</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#inhoud").addClass("titel");
+      $("#inhoud").html("Starten met jQuery!");
+      $("#inhoud").animate({
+        fontSize: "45px"
+      }, 2500);
+      $("button").click(function() {
+        $("#hidden-text").show("slow");
+      });
+    });
+  </script>
+  <style type="text/css">
+    #inhoud {
+      text-align: center;
+      line-height: 200px;
+      font-size: 1px;
+      height: 150px;
+      text-shadow: 1px 1px 5px darkblue;
+    }
+
+    #inhoud2 {
+      color: white;
+    }
+
+    #oef3 {
+      text-decoration: none;
+      color: white;
+      font-size: 14pt;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="container" id="head">
+    <div class="page-header">
+      <h1 id="headtitle">Redouan's Portolio</h1></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default" id="nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"> <img src="img/odisee_head.png" alt="odisee logo" class="img-responsive" id="odisee">
+        </a>
+      </div>
+      <ul class="nav navbar-nav" id="navitems">
+        <li><a href="index.html"><i class="icon ion-home"></i> Home</a></li>
+        <li class="active"><a href="lessen.html"><i class="icon ion-university"></i> Lessen</a></li>
+        <li><a href="http://onderwijsaanbod.odisee.be/2015/syllabi/n/HBI19BN.htm#activetab=doelstellingen_idp15875392"><i class="icon ion-document"></i> ECTS</a></li>
+        <li><a href="#"><i class="icon ion-social-github"></i> GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Container -->
+  <div class="panel panel-default" id="panelles3">
+    <div class="panel-heading">
+      <p id="panel-titel-home">Welkom</p>
+    </div>
+    <div class="panel-body">
+      <ul class="nav nav-tabs">
+        <li><a href="Les1.html">Les 1</a></li>
+        <li><a href="Les2.html">Les 2</a></li>
+        <li><a href="Les3.html">Les 3</a></li>
+        <li><a href="Les4.html">Les 4</a></li>
+        <li><a href="Les5.html">Les 5</a></li>
+          <li class="les6"><a href="Les6.html">Les 6</a></li>
+          <li><a href="Les7.html">Les 7</a></li>
+          <li><a href="Les8.html">Les 8</a></li>
+      </ul>
+    </div>
+<div class="panel-body">
+  <h3>Oefening 5.1</h3>
+							<div>
+								<button id="kleiner">
+									Kleiner
+								</button>
+								<button id="groter">
+									Groter
+								</button>
+								<p id="oef52">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus mauris, rutrum at gravida id, iaculis at nulla. Suspendisse ut dolor tortor. Nulla pretium efficitur consequat. Nulla et sapien ac purus convallis cursus. Aenean tincidunt non justo nec facilisis. Nunc finibus dui erat, nec efficitur nulla egestas in. Donec a sapien vitae sapien scelerisque efficitur.
+								</p>
+							</div>
+              <h3>Oefening 5.3</h3>
+              <a href="les6_oef.html">Ga naar oef 5.3</a>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">@Copyright Redouan Ahad-Dad</p>
+      </div>
+    </footer>
+</body>
+
+<!-- Script op einde van document, pagina laad zo sneller -->
+<script src="js/jquery-ui.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#kleiner").click(function() {
+					// parseFloat zet getallen in textvorm on naar getallen in getallenvorm
+					var grootte = parseFloat($("#oef52").css("font-size"));
+					$("#oef52").css("font-size", ((.8 * grootte) > 3 ? (.8 * grootte) : 3) + "px");
+				});
+				$("#groter").click(function() {
+					var grootte = parseFloat($("#oef52").css("font-size"));
+					$("#oef52").css("font-size", (1.2 * grootte) + "px");
+				});
+			});
+		</script>
+
+
+</html>
