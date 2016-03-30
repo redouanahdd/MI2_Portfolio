@@ -32,12 +32,18 @@ h2{
 td{
   width: 10em;
   height: 10em;
-  background-color: yellow;
+  background-color: #D1D3D8;
   border-width: 0.5em;
-  border-style:double;
-  border-color: red;
+  border-style: groove;
+  border-color: #042F89;
+
 }
+
 .panel
 {
   padding: 5em;
+}
+#textarea
+{
+  padding: 1em;
 }

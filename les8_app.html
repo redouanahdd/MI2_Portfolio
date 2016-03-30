@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="Redouan">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" >
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<div data-role="page">
+			<div data-role="header">
+				<h1>Stel weeralert in</h1>
+			</div>
+			<div data-role="main">
+				<form>
+					<label for="text-basic">E-mail adres:</label>
+					<input name="text-basic" id="text-basic" value="" type="email">
+					<fieldset data-role="controlgroup">
+						<legend>
+							Voor welk weer ?
+						</legend>
+						<input name="checkbox-1a" id="checkbox-1a" checked="" type="checkbox">
+						<label for="checkbox-1a">Regen</label>
+						<input name="checkbox-2a" id="checkbox-2a" type="checkbox">
+						<label for="checkbox-2a">Sneeuw</label>
+						<input name="checkbox-3a" id="checkbox-3a" type="checkbox">
+						<label for="checkbox-3a">Zon</label>
+					</fieldset>
+					<label for="slider">Aantal minuten vooraf:</label>
+					<input name="slider" id="slider" value="40" min="0" max="60" type="range">
+					<label for="slider2">Actief:</label>
+					<select name="slider2" id="slider2" data-role="slider">
+						<option value="off">Neen</option>
+						<option value="on">Ja</option>
+					</select>
+					<label for="select-choice-1" class="select">Voor welk adres:</label>
+					<select name="select-choice-1" id="select-choice-1">
+						<option value="thuis">Thuis</option>
+						<option value="ergens">Ergens</option>
+						<option value="brussel">Brussel</option>
+						<option value="halle">Halle</option>
+					</select>
+					<button type="submit">
+						<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Annuleer</a>
+						<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-b">Bewaar</a>
+					</button>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>

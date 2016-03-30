@@ -12,19 +12,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/stylesheet.css">
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("#inhoud").addClass("titel");
-      $("#inhoud").html("Starten met jQuery!");
-      $("#inhoud").animate({
-        fontSize: "45px"
-      }, 2500);
-      $("button").click(function() {
-        $("#hidden-text").show("slow");
-      });
-    });
-  </script>
   <style type="text/css">
     #inhoud {
       text-align: center;
@@ -71,7 +58,7 @@
   </nav>
 
   <!-- Container -->
-  <div class="panel panel-default">
+  <div class="panel panel-default" >
     <div class="panel-heading">
       <p id="panel-titel-home">Welkom</p>
     </div>
@@ -88,20 +75,7 @@
       </ul>
     </div>
 <div class="panel-body">
-  <h3>Oefening 5.1</h3>
-							<div>
-								<button id="kleiner">
-									Kleiner
-								</button>
-								<button id="groter">
-									Groter
-								</button>
-								<p id="oef52">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus mauris, rutrum at gravida id, iaculis at nulla. Suspendisse ut dolor tortor. Nulla pretium efficitur consequat. Nulla et sapien ac purus convallis cursus. Aenean tincidunt non justo nec facilisis. Nunc finibus dui erat, nec efficitur nulla egestas in. Donec a sapien vitae sapien scelerisque efficitur.
-								</p>
-							</div>
-              <h3>Oefening 5.3</h3>
-              <a href="les6_oef.html">Ga naar oef 5.3</a>
+<a href="les8_app.html" style="color:red"><i class="icon ion-iphone" ></i> Jquery Mobile app les 8-9</a>
 </div>
     <!-- Footer -->
     <footer class="footer">
@@ -112,21 +86,6 @@
 </body>
 
 <!-- Script op einde van document, pagina laad zo sneller -->
-<script src="js/jquery-ui.js"></script>
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#kleiner").click(function() {
-					// parseFloat zet getallen in textvorm on naar getallen in getallenvorm
-					var grootte = parseFloat($("#oef52").css("font-size"));
-					$("#oef52").css("font-size", ((.8 * grootte) > 3 ? (.8 * grootte) : 3) + "px");
-				});
-				$("#groter").click(function() {
-					var grootte = parseFloat($("#oef52").css("font-size"));
-					$("#oef52").css("font-size", (1.2 * grootte) + "px");
-				});
-			});
-		</script>
 
 
 </html>
