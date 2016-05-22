@@ -38,6 +38,15 @@ td{
   border-color: #042F89;
 
 }
+.clinton{
+background-color: red;
+background-image: url(../img/clinton.png);
+}
+.trump{
+background-color: blue;
+background-image: url(../img/trump.png);
+
+}
 
 .panel
 {
